@@ -1,0 +1,27 @@
+{
+  "name": "my-money",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --write \"./{src,client/src}/**/*.{js,scss}\"",
+    "lint": "eslint --fix \"./{src,client/src}/**/*.js\"",
+    "start": "node src/index"
+  },
+  "keywords": [],
+  "author": "Henrique Degrecci <@hdegrecci@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "9.x.x"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "prettier": "^1.11.1"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
