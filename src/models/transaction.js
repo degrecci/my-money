@@ -3,8 +3,8 @@ module.exports = (sequelize, DataTypes) => {
   var Transaction = sequelize.define(
     'Transaction',
     {
-      amount: DataTypes.DECIMAL,
-      date: DataTypes.DATEONLY
+      amount: { type: DataTypes.DECIMAL(16, 2), allowNull: false },
+      date: { type: DataTypes.DATEONLY, allowNull: false }
     },
     {}
   );
