@@ -10,7 +10,7 @@
     "prettier": "prettier --write \"./{src,client/src}/**/*.{js,scss}\"",
     "lint": "eslint --fix \"./{src,client/src}/**/*.js\"",
     "start": "node src/index",
-    "dev": "set NODE_ENV=development&node src/index"
+    "dev": "cross-env NODE_ENV=development node src/index"
   },
   "keywords": [],
   "author": "Henrique Degrecci <@hdegrecci@gmail.com>",
@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "express": "^4.16.3",
+    "forest-express-sequelize": "^2.7.0",
     "pg": "^7.4.1",
     "sequelize": "^4.37.6"
   },
@@ -41,5 +42,5 @@
       "src/models/index.js",
       "test/**"
     ]
-   }
+  }
 }
